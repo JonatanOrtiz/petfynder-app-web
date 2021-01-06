@@ -1,0 +1,11 @@
+services:
+    container:
+        image: node-for-react 
+        ports:
+            - 3000:3000
+        volumes:
+            - .:/PetfynderWeb
+        tty: true
+        working_dir: /PetfynderWeb
+        command: >
+            bash -c "npm start"
